@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Datagrid />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Datagrid from '@/components/Datagrid.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld,
+    Datagrid,
   },
 };
 </script>
+
+<style lang="scss">
+.home {
+  height: 100%;
+}
+</style>
